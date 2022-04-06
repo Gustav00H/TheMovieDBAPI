@@ -25,11 +25,22 @@ class _PaginaInicialState extends State<PaginaInicial> {
           child: Column(
             children: [
               const SizedBox(
-                height: 50,
+                height: 40,
               ),
               Text(
                 'Filmes',
                 style: Theme.of(context).textTheme.headline2,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Container(
+                  height: 40,
+                  decoration: const BoxDecoration(color: Colors.black87),
+                  child: TextField(
+                    style: Theme.of(context).textTheme.headline6,
+                    onChanged: _controller.input,
+                  ),
+                ),
               ),
               ValueListenableBuilder<Movies?>(
                 valueListenable: _controller.filmes,
