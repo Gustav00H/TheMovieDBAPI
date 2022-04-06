@@ -1,6 +1,6 @@
-# flutter_application_1
+# The Movie DB API
 
-A new Flutter project.
+Projeto que faz uso da API do The Movie DB para criar um aplicativo android.
 
 ## Getting Started
 
